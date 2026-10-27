@@ -1,0 +1,1 @@
+{"name":"git-atlas","version":"1.0.0","private":true,"description":"GitとGitHubの18の発見を巡る静的学習サイト","scripts":{"build:css":"tailwindcss -i ./assets/styles.css -o ./assets/site.css --minify","check":"node --check assets/app.js"},"devDependencies":{"tailwindcss":"3.4.17"}}

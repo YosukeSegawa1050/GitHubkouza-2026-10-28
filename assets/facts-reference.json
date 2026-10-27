@@ -1,0 +1,200 @@
+[
+  {
+    "chapter": "scale",
+    "value": "97",
+    "unit": "%",
+    "title": "プロ回答者の約97%が、Gitを使う。",
+    "body": "2022年のStack Overflow調査では、プロの開発者として回答した人の96.65%がGitを利用していました。チーム開発を学ぶ最初の一歩が、世界の開発現場につながっています。",
+    "note": "世界の全開発者を数えた割合ではなく、調査のプロ回答者の割合です。",
+    "date": "2022年調査",
+    "source": "Stack Overflow Developer Survey",
+    "url": "https://survey.stackoverflow.co/2022/"
+  },
+  {
+    "chapter": "scale",
+    "value": "8",
+    "unit": "億+",
+    "title": "コードの置き場所は、8億以上。",
+    "body": "GitHubには8億以上のリポジトリがあります。リポジトリはコードだけでなく、その変更の記録も保管する場所。小さな練習から大きな開発まで、同じ仕組みが使われています。",
+    "note": "公開リポジトリだけの数ではありません。リポジトリ数と、独立した製品の数は異なります。",
+    "date": "2026.10.27確認",
+    "source": "GitHub About",
+    "url": "https://github.com/about"
+  },
+  {
+    "chapter": "scale",
+    "value": "2.25",
+    "unit": "億+",
+    "title": "世界中の開発者が、同じ場所に集まる。",
+    "body": "GitHubは公式に「225M+ Developers」と紹介しています。個人の学習、オープンソースへの参加、企業の開発。さまざまな人がこのコミュニティに関わっています。",
+    "note": "公式のDevelopers表記に基づきます。全員が職業プログラマーという意味ではありません。",
+    "date": "2026.10.27確認",
+    "source": "GitHub About",
+    "url": "https://github.com/about"
+  },
+  {
+    "chapter": "scale",
+    "value": "1",
+    "unit": "人 / 秒",
+    "title": "平均すると、毎秒ひとり以上。",
+    "body": "2025年版Octoverseは、過去1年間にGitHubへ新たに参加した開発者を、平均して毎秒1人以上と表現しています。いま学び始める人も、大きな流れの一員です。",
+    "note": "過去1年間の平均を表す数字です。現在の登録をリアルタイム表示しているわけではありません。",
+    "date": "2025年版",
+    "source": "GitHub Octoverse 2025",
+    "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/"
+  },
+  {
+    "chapter": "scale",
+    "value": "6",
+    "unit": "位",
+    "title": "日本のコミュニティも、世界トップクラス。",
+    "body": "2025年版の発表では、日本のGitHub開発者コミュニティは450万人を超え、国・地域別で世界6位。世界の開発は、遠い国だけの話ではありません。",
+    "note": "2025年版の集計です。世界の全プログラマー人口の順位ではありません。",
+    "date": "2025年版",
+    "source": "GitHub Japan 公式発表",
+    "url": "https://digitalpr.jp/pdf.php?r=123296"
+  },
+  {
+    "chapter": "scale",
+    "value": "1",
+    "unit": "位",
+    "title": "TypeScriptが、首位になった年。",
+    "body": "2025年8月、GitHub上のコントリビューター数に基づく言語ランキングで、TypeScriptが首位になりました。JavaScriptの学びは、その先の技術にもつながっています。",
+    "note": "GitHubのコントリビューター数ベース。コード行数や世界全体の人気順位ではありません。",
+    "date": "2025年8月",
+    "source": "GitHub Octoverse 2025",
+    "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/"
+  },
+  {
+    "chapter": "products",
+    "value": "90",
+    "unit": "%",
+    "title": "大企業も、同じプラットフォームを使う。",
+    "body": "Fortune 100に入る企業の90%がGitHubを利用しています。今日触れるツールは、学生の練習用に限らず、企業の開発にも使われるものです。",
+    "note": "Fortune 100という特定の企業群の割合です。世界中の企業の90%ではありません。",
+    "date": "2026.10.27確認",
+    "source": "GitHub About",
+    "url": "https://github.com/about"
+  },
+  {
+    "chapter": "products",
+    "value": "Android",
+    "unit": "",
+    "title": "スマートフォンの、その中にもGit。",
+    "body": "Androidのオープンソース開発ではGitとRepoが使われています。Repoは複数のGitリポジトリをまとめて扱うための道具。大きな製品では、複数のリポジトリが協力して動きます。",
+    "note": "Android Open Source Projectのソース管理の話です。",
+    "date": "公式ドキュメント",
+    "source": "Android Open Source Project",
+    "url": "https://source.android.com/docs/setup/download/source-control-tools?hl=en"
+  },
+  {
+    "chapter": "products",
+    "value": "Chromium",
+    "unit": "",
+    "title": "ブラウザーをつくる現場でも。",
+    "body": "Chromeなどの基盤となるオープンソースプロジェクトChromiumでも、ソースコードの取得や開発にGitが使われます。いつも使うブラウザーの裏側にも、変更履歴の積み重ねがあります。",
+    "note": "Gitを使うことと、GitHub上で開発することは別です。",
+    "date": "公式ドキュメント",
+    "source": "Chromium Developers",
+    "url": "https://www.chromium.org/developers/how-tos/get-the-code/"
+  },
+  {
+    "chapter": "products",
+    "value": "VS Code",
+    "unit": "",
+    "title": "コードを書く道具も、コードを公開している。",
+    "body": "VS Codeの基盤となるCode - OSSは、MicrosoftのGitHubリポジトリでコミュニティと公開開発されています。ソースやIssueをのぞくと、普段のエディターをつくる過程に触れられます。",
+    "note": "配布版VS Codeやすべての拡張機能まで同じライセンスという意味ではありません。",
+    "date": "公式リポジトリ",
+    "source": "Microsoft / vscode",
+    "url": "https://github.com/microsoft/vscode"
+  },
+  {
+    "chapter": "products",
+    "value": "Made in",
+    "unit": "Japan",
+    "title": "日本の企業にも、活用の広がり。",
+    "body": "ソニーのオープンソース公開、NTTドコモのGitHub Enterprise利用、ZOZOの導入事例。異なる使い方を通じて、日本の企業でもGitHubが活用されています。",
+    "note": "各社の公開事例です。各社すべての開発基盤が統一されているとは限りません。",
+    "date": "公開事例",
+    "source": "Sony / GitHub",
+    "url": "https://github.com/sony"
+  },
+  {
+    "chapter": "history",
+    "value": "10",
+    "unit": "日ほど",
+    "title": "Gitの原型は、約10日で生まれた。",
+    "body": "2005年、Linuxの開発を支えるため、Linus TorvaldsがGitの初期コアを制作しました。本人の振り返りによると、その原型にかけた時間は約10日でした。",
+    "note": "現在のGitの全機能が10日で完成した、という意味ではありません。",
+    "date": "2005年の初期コア",
+    "source": "GitHub：Torvaldsインタビュー",
+    "url": "https://github.blog/open-source/git/git-turns-20-a-qa-with-linus-torvalds/"
+  },
+  {
+    "chapter": "history",
+    "value": "5.5",
+    "unit": "GB",
+    "title": "140万回の変更を、ひとつの歴史に。",
+    "body": "Git公式サイトの2025年の例では、Linuxの約140万コミットを含む履歴が約5.5GB。ソース本体は約1.7GBです。変更を記録する仕組みが、巨大な開発の積み重ねを扱っています。",
+    "note": "2025年の公式例であり、現在のリポジトリを測った値ではありません。",
+    "date": "2025年の例",
+    "source": "Git公式：About",
+    "url": "https://git-scm.com/about"
+  },
+  {
+    "chapter": "history",
+    "value": "75",
+    "unit": "億ドル",
+    "title": "GitHubが、Microsoftの一員に。",
+    "body": "2018年、Microsoftは75億ドル規模の株式対価でGitHubを買収すると発表。同年10月26日に買収が完了しました。開発者の協働の場が、大きな注目を集めた出来事です。",
+    "note": "Gitという技術自体をMicrosoftが買収した、という意味ではありません。",
+    "date": "2018年",
+    "source": "Microsoft買収発表",
+    "url": "https://news.microsoft.com/source/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/"
+  },
+  {
+    "chapter": "beyond",
+    "value": "1,000",
+    "unit": "年先へ",
+    "title": "コードを、北極圏に残す。",
+    "body": "GitHub Archive Programは、2020年2月2日時点のアクティブな公開リポジトリのスナップショットを北極圏で保存。1,000年の耐久性を想定したフィルムに、ソフトウェアの歴史を託しました。",
+    "note": "1,000年間の保存保証や、現在の全リポジトリの常時バックアップではありません。",
+    "date": "2020年のスナップショット",
+    "source": "GitHub Archive Program",
+    "url": "https://archiveprogram.github.com/"
+  },
+  {
+    "chapter": "beyond",
+    "value": "NASA",
+    "unit": "",
+    "title": "宇宙開発のコードも、のぞける。",
+    "body": "NASAは公式GitHub組織でソフトウェアを公開しています。宇宙や科学を支える技術の一部も、私たちがソースコードを読める場所にあります。",
+    "note": "NASAの全システムがGitHub上で動く、という意味ではありません。",
+    "date": "NASA公式組織",
+    "source": "NASA / GitHub",
+    "url": "https://github.com/nasa"
+  },
+  {
+    "chapter": "beyond",
+    "value": "12,000",
+    "unit": "人ほど",
+    "title": "知らないうちに、火星を飛ばしていた。",
+    "body": "火星ヘリコプターIngenuityが利用したオープンソースソフトウェアには、約1万2,000人の開発者が貢献していました。ひとつの貢献が、思いがけない場所で役立つことがあります。",
+    "note": "利用されたOSSへの貢献者です。NASAが直接雇用した開発者数ではありません。",
+    "date": "2021年の紹介",
+    "source": "GitHub：Open source goes to Mars",
+    "url": "https://github.blog/news-insights/company-news/open-source-goes-to-mars/"
+  },
+  {
+    "chapter": "beyond",
+    "value": "1969",
+    "unit": "",
+    "title": "月へ行ったコードを、いま読む。",
+    "body": "アポロ11号の誘導コンピューターのソースコードをGitHubで閲覧できます。紙資料をもとにデジタル化された歴史的なコードを、現代のツールで読めるのです。",
+    "note": "Virtual AGC・MIT Museum経由の資料を使ったコミュニティ保存版。NASAの公式投稿でも、当時Gitを使っていたという話でもありません。",
+    "date": "アポロ11号の保存資料",
+    "source": "Apollo-11 repository",
+    "url": "https://github.com/chrislgarry/Apollo-11"
+  }
+]
