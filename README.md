@@ -1,9 +1,50 @@
-# Gitの世界をのぞく — GIT ATLAS
+# Git Atlas — 18の発見 / 固定フレーム版
 
-POSSE 7.5期のGit講座に向けた、18の豆知識を紹介する静的サイトです。
-HTML・Tailwind CSS・素のJavaScriptのみを使用しています。Reactなどのアプリケーションフレームワークやバックエンドはありません。
+`develop` ブランチの `index.html` をブラウザーで開いてください。
+インターネット接続・Node.js・サーバーは不要です。VS Codeでフォルダーごと開いて編集できます。
 
-## VS Codeで開く
+## 操作
+通常の縦スクロールで同じ大きな枠の本文・図・背景が変わります。18項目は左のナビから直接選べます。
+Tab→Enterで項目へ移動可能。「一覧表示に切り替え」で通常の縦並びになります。
+OSの動きを減らす設定、小さい画面、文字が枠に収まらない場合、JavaScript無効時には一覧表示で読めます。
+
+## 図の動き
+- 調査の100点のうち最大97点が点灯（96.65%を約97%に丸めた模式図）。年・対象者・正確な割合は本文に固定表示。
+- 地球儀は内側の地図と経線が動く模式的な回転。
+- Code-OSSの画面の装飾用HTMLが徐々に表示。
+- 追加イラストの構成要素もスクロールに合わせて現れます。
+逆スクロールに対応し、自動再生・スクロール操作の横取りはありません。開始と終了に読むための静止区間があります。
+一覧表示・動きを減らす設定・JavaScript無効時は完成状態です。
+
+## 構成と編集
+`index.html`: 18記事とSVG。`assets/scroll-frame/` の `styles.css`: レイアウト、`app.js`: 項目切替、`motion.js`: 図の内部、`tailwind.css`: 同梱ユーティリティ。
+出典リンクは画面から外し、`assets/scroll-frame/facts-reference.json` に記録しています。事実の対象・時点・注意書きは本文に残しています。
+
+## 18項目
+1. 2022年のプロ回答者の96.65%がGitを利用
+2. GitHubの8億以上のリポジトリ
+3. GitHubの2.25億以上のDevelopers
+4. 2025年版・過去1年の平均で毎秒ひとり以上の参加
+5. 2025年の日本450万人超・世界6位
+6. 2025年8月のTypeScript首位（貢献者数）
+7. Fortune 100の90%がGitHubを利用
+8. AndroidのGitとRepo
+9. ChromiumのGit利用
+10. Code-OSSの公開開発
+11. 日本企業の活用例
+12. Git初期コアの約10日
+13. Linuxの140万コミット・5.5GBの履歴（2025年例）
+14. 2018年のMicrosoftによるGitHub買収・75億ドル
+15. 北極圏のコード保存・2020年スナップショット
+16. NASAの一部ソフトウェア公開
+17. Ingenuityが利用したOSSの約1万2,000人の貢献者
+18. アポロ11号の歴史的コードを後年デジタル化した保存資料
+
+## 検証と限界
+JS構文、18件の本文・注記一致、リンク・ID、全項目ジャンプ、逆スクロール、縮小画面・動きを減らす設定、リサイズ時の進行維持、JS無効時の静的内容、ZIP整合性を検査。
+DOMテストでは画面寸法・スクロール位置を模擬しています。実ブラウザーの起動は環境制限により利用できず、実際の文字幅・描画・動きの滑らかさは未確認です。
+
+## VS Code / GitHub
 
 ```sh
 git clone https://github.com/YosukeSegawa1050/GitHubkouza-2026-10-28.git
@@ -12,52 +53,8 @@ git switch develop
 code .
 ```
 
-すでにclone済みなら、そのフォルダーで `git fetch origin` → `git switch develop` → `git pull --ff-only origin develop` を実行してください。ローカルの未保存・未コミットの変更は先に保全してください。
-
-### サイトを見る（インストール不要）
-
-`index.html` をブラウザーで開くだけで動作します。CSSはビルド済みファイルを同梱しているため、閲覧にNode.jsやCDNへの接続は不要です。VS CodeのLive Server拡張を利用してもかまいません。
-Pythonがある場合は `python -m http.server 8000` を実行し、`http://localhost:8000` を開く方法もあります。
-
-## 編集するファイル
-
-| ファイル | 役割 |
-| --- | --- |
-| `index.html` | 18件の本文、4章の構成、ナビゲーション。文章の編集はここから。 |
-| `assets/styles.css` | デザインの編集元。Tailwindディレクティブと独自スタイル。 |
-| `assets/site.css` | Tailwindで生成した配信用CSS。直接編集せず再ビルドする。 |
-| `assets/app.js` | スクロール位置による数字の切り替え、章の現在位置、表示演出、動きの切替。 |
-| `assets/facts-reference.json` | 出典と数値の確認用資料。画面はこのJSONから動的生成していないため、本文を変える場合はHTMLも更新する。 |
-| `tailwind.config.js` | Tailwindのクラス抽出対象。 |
-
-## スタイルを変更したとき
-
-Node.jsとnpmを使える環境で、初回は `npm ci`、CSSやTailwindクラスを変更後は `npm run build:css` を実行してください。Node.jsはCSSの開発ツールとしてのみ必要です。閲覧時の技術はHTML/CSS/JavaScriptのみです。
-
-```sh
-npm ci
-npm run build:css
-npm run check
-```
-
-`npm run check` はJavaScript構文検査です。ブラウザーでの見た目や動作も合わせて確認してください。
-
-## 画面と操作
-
-- PC優先。左の固定目次から4章へ移動できます。
-- 右のビジュアルは、読んでいる記事に合わせて数字や見出しを切り替えます。
-- 通常のスクロールを妨げず、強制的なページ切替は行いません。
-- 左下のボタンで動きをオフにできます。OSの「視差効果を減らす」設定にも対応しています。
-- Tabキーで移動できます。冒頭に本文スキップリンクがあります。
-- JavaScriptがなくても、すべての本文を読むことができます。
-- 画面が狭い場合は1列表示へ切り替えます。
-- サイト上のコード風の装飾は演出です。`git add curiosity`などを実行する必要はありません。
-
-## 数値と出典
-
-各記事には対象年・確認時点を記載しています。画面上の出典欄・リンクは表示せず、出典は `assets/facts-reference.json` に保存しています。GitとGitHubの指標、調査回答者と世界全体の人口を混同しないよう注意してください。内容の確認日は2026年10月27日です。統計は永続的な最新値ではありません。
-GitHubへのリンクがあることは、そのコードを自由に再配布できることを意味しません。
-
-## ブランチ・公開
-
-制作ブランチは `develop` です。`main`へのマージ、GitHub Pagesの有効化、公開設定の変更は行っていません。
+既にclone済みならローカル変更を保全後、`git fetch origin`、`git switch develop`、`git pull --ff-only origin develop`。
+閲覧はNode不要。JavaScript構文確認は `npm run check`。
+旧レイアウト比較は `prototypes/index.html` に保存。旧 `assets/site.css` / `assets/styles.css` は履歴用に維持し、現在のルートHTMLでは使っていません。
+現在のカスタムCSSは `assets/scroll-frame/styles.css` を直接編集できます。
+mainへのマージ・公開設定変更はこの作業に含めません。
